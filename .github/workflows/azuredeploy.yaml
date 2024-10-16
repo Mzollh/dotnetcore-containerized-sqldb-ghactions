@@ -25,13 +25,13 @@ permissions:
 # 2. Change these variables for your configuration (and keep these in sync with the build-deploy.yaml workflow):
 env:
   AZURE_RESOURCE_GROUP: Test19  # target resource, must match the {resource-group-name} you setup in the pre-requisties
-  WEB_APP_NAME: app-todo-sample1         # set the name for the Web App on Azure
-  ACR_NAME: acrtodosample1               # set the name for the Azure Container Registry
-  CONTAINER_IMAGE_NAME: app-todo-sample1 # set the name for the container image
-  SQL_SERVER_NAME: sql-todo-sample1      # set the name for the Azure SQL Server
-  SQL_SERVER_ADMIN_LOGIN: dbadminlogin1  # set the name for the Azure SQL Server admin login
+  WEB_APP_NAME: app-todo-sample2         # set the name for the Web App on Azure
+  ACR_NAME: acrtodosample2               # set the name for the Azure Container Registry
+  CONTAINER_IMAGE_NAME: app-todo-sample2 # set the name for the container image
+  SQL_SERVER_NAME: sql-todo-sample2      # set the name for the Azure SQL Server
+  SQL_SERVER_ADMIN_LOGIN: dbadminlogin2  # set the name for the Azure SQL Server admin login
   SQL_SERVER_ADMIN_PASSWORD: ${{ secrets.SQL_SERVER_ADMIN_PASSWORD }}  # password for the Azure SQL Sever admin login -> must be in the secrets
-  SQL_DB_NAME: sqldb-todo1               # set the name for the Azure SQL Database
+  SQL_DB_NAME: sqldb-todo2               # set the name for the Azure SQL Database
 
 jobs:
   deploy_arm_templates:
